@@ -1,4 +1,4 @@
-package com.alarmas.src
+package com.alarmas.src.model
 
 data class CardView(
     val hora: String,

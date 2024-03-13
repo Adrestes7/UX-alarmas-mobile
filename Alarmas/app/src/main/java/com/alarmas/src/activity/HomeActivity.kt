@@ -1,6 +1,6 @@
-package com.alarmas.src
+package com.alarmas.src.activity
 
-import ListAdapter
+import com.alarmas.src.adapter.ListAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuInflater
@@ -8,6 +8,8 @@ import android.widget.Button
 import android.widget.ListView
 import android.widget.PopupMenu
 import androidx.appcompat.app.AppCompatActivity
+import com.alarmas.src.R
+import com.alarmas.src.model.CardView
 
 
 class HomeActivity : AppCompatActivity() {
