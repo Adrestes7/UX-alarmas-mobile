@@ -4,6 +4,7 @@ import com.alarmas.src.adapter.ListAdapter
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuInflater
+import android.view.View
 import android.widget.Button
 import android.widget.ListView
 import android.widget.PopupMenu
@@ -18,18 +19,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        findViewById<Button>(R.id.button).setOnClickListener {
-            val popup = PopupMenu(this, it)
-            val inflater: MenuInflater = popup.menuInflater
-            inflater.inflate(R.menu.menu_file, popup.menu)
-            popup.setOnMenuItemClickListener { item ->
-                if(item.title?.equals("Perfil") == true){
-                    navigateToProfile()
-                }
-                true
-            }
-            popup.show()
-        }
+
 
         val listView = findViewById<ListView>(R.id.list)
         val adapter = ListAdapter(this,data)
@@ -43,5 +33,19 @@ class HomeActivity : AppCompatActivity() {
         val intent = Intent(this, ProfileActivity::class.java)
         startActivity(intent)
     }
+
+    fun goToProfile(view: View) {
+            val popup = PopupMenu(this, view)
+            val inflater: MenuInflater = popup.menuInflater
+            inflater.inflate(R.menu.menu_file, popup.menu)
+            popup.setOnMenuItemClickListener { item ->
+                if(item.title?.equals("Perfil") == true){
+                    navigateToProfile()
+                }
+                true
+            }
+            popup.show()
+        }
+
 
 }
