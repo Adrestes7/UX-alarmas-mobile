@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Alarmas</string>
+    <string name="create_new_account">Crear nueva cuenta</string>
+    <string name="hint_name">Nombre</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_birth_date">Fecha de nacimiento</string>
+    <string name="action_register">Registrarse</string>
+    <string name="action_go_to_login">Iniciar sesión</string>
+    <string name="verification_title">Verificación</string>
+    <string name="verification_instruction">Ingresa el código de verificación enviado al correo</string>
+    <string name="verification_code_hint">Código de Verificación</string>
+    <string name="button_next">Siguiente</string>
 </resources>
