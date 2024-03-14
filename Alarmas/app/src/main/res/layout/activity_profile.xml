@@ -123,11 +123,27 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="48dp"
         android:layout_marginTop="24dp"
+        android:background="@color/purple_200"
         android:text="Editar Perfil"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="26dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/black"
+        android:onClick="goToHome"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_ios_24" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

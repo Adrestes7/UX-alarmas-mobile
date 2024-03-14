@@ -3,6 +3,7 @@ package com.alarmas.src.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import com.alarmas.src.R
@@ -24,5 +25,10 @@ class ProfileActivity : AppCompatActivity() {
             val intent = Intent(this, EditProfileActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    fun goToHome(view: View) {
+        val intent = Intent(this, HomeActivity::class.java)
+        startActivity(intent)
     }
 }
